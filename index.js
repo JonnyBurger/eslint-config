@@ -71,6 +71,7 @@ module.exports = {
 		'react/jsx-no-target-blank': 'off',
 		'react/no-unsafe': 'warn',
 		'react/no-did-mount-set-state': 'error',
+		'react/no-deprecated': 'warn',
 		'no-warning-comments': 'warn',
 		'react-native/no-unused-styles': 'error',
 		'import/no-absolute-path': 'error',
