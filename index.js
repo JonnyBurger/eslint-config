@@ -7,7 +7,7 @@ module.exports = {
 		browser: true,
 		es6: true
 	},
-	plugins: [...xoReact.plugins, 'react-native'],
+	plugins: [...xoReact.plugins, 'react-native', 'promise'],
 	extends: ['eslint:recommended', 'plugin:import/errors'],
 	parser: 'babel-eslint',
 	parserOptions: {
@@ -86,7 +86,15 @@ module.exports = {
 		'import/no-duplicates': 'error',
 		'import/first': 'error',
 		'import/newline-after-import': 'error',
-		'import/order': 'error'
+		'import/order': 'error',
+		'import/no-unassigned-import': 'error',
+		'import/extensions': ['error', 'never', {json: 'always'}],
+		'promise/no-return-wrap': 'error',
+		'promise/param-names': 'error',
+		'promise/catch-or-return': 'error',
+		'promise/no-nesting': 'error',
+		'promise/no-promise-in-callback': 'error',
+		'promise/valid-params': 'error'
 	},
 	overrides: [
 		{
