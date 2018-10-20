@@ -42,7 +42,6 @@ module.exports = {
 		'operator-linebreak': 'off',
 		'space-before-function-paren': 'off',
 		'react/jsx-child-element-spacing': 'off',
-		'import/default': 'off',
 		'no-template-curly-in-string': 'error',
 		'require-atomic-updates': 'error',
 		'default-case': 'error',
