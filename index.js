@@ -72,7 +72,14 @@ module.exports = {
 		'react/no-unsafe': 'warn',
 		'react/no-did-mount-set-state': 'error',
 		'no-warning-comments': 'warn',
-		'react-native/no-unused-styles': 'error'
+		'react-native/no-unused-styles': 'error',
+		'import/no-absolute-path': 'error',
+		'import/no-dynamic-require': 'error',
+		'import/no-internal-modules': 'error',
+		'import/no-self-import': 'error',
+		'import/no-cycle': 'error',
+		'import/no-useless-path-segments': 'error',
+		'import/no-named-as-default': 'error'
 	},
 	overrides: [
 		{
