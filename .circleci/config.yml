@@ -6,7 +6,7 @@ defaults: &defaults
     - image: circleci/node:10
 
 jobs:
-  test:
+  install:
     <<: *defaults  
     steps:
       - checkout
@@ -35,15 +35,15 @@ jobs:
             
 workflows:
   version: 2
-  test-deploy:
+  install-deploy:
     jobs:
-      - test:
+      - install:
           filters:
             tags:
               only: /^v.*/
       - deploy:
           requires:
-            - test
+            - install
           filters:
             tags:
               only: /^v.*/
