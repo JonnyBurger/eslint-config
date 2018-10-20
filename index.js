@@ -7,7 +7,7 @@ module.exports = {
 		browser: true,
 		es6: true
 	},
-	plugins: [...xoReact.plugins],
+	plugins: [...xoReact.plugins, 'react-native'],
 	extends: ['eslint:recommended', 'plugin:import/errors'],
 	parser: 'babel-eslint',
 	parserOptions: {
@@ -38,6 +38,7 @@ module.exports = {
 		'react/jsx-tag-spacing': 'off',
 		'react/jsx-wrap-multilines': 'off',
 		'no-mixed-operators': 'off',
+		'no-mixed-spaces-and-tabs': 'off',
 		'operator-linebreak': 'off',
 		'space-before-function-paren': 'off',
 		'react/jsx-child-element-spacing': 'off',
@@ -71,8 +72,15 @@ module.exports = {
 		'react/jsx-no-target-blank': 'off',
 		'react/no-unsafe': 'warn',
 		'react/no-did-mount-set-state': 'error',
-		'no-warning-comments': 'warn'
+		'no-warning-comments': 'warn',
+		'react-native/no-unused-styles': 'error'
 	},
+	overrides: [
+		{
+			files: 'web/**',
+			rules: {'react-native/no-raw-text': 'off'}
+		}
+	],
 	settings: {
 		react: {
 			version: '16.5.2'

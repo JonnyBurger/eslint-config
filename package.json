@@ -27,6 +27,7 @@
   "peerDependencies": {
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react-native": "^3.5.0",
     "babel-eslint": "^10.0.1"
   }
 }
