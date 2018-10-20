@@ -1,6 +1,6 @@
 {
   "name": "@jonny/eslint-config",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Jonny's ESLint config",
   "main": "index.js",
   "scripts": {
