@@ -21,10 +21,12 @@
   },
   "homepage": "https://github.com/JonnyBurger/eslint-config#readme",
   "dependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint-config-unicorn": "^0.5.0",
     "eslint-config-xo": "^0.25.0",
-    "eslint-config-xo-react": "^0.17.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-config-xo-react": "^0.17.0"
+  },
+  "peerDependencies": {
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-import": "^2.14.0",
+    "babel-eslint": "^10.0.1"
   }
 }

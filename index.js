@@ -7,8 +7,8 @@ module.exports = {
 		browser: true,
 		es6: true
 	},
-	plugins: [xoReact.plugins],
-	extends: ['eslint:recommended', 'xo-react', 'plugin:import/errors'],
+	plugins: [...xoReact.plugins],
+	extends: ['eslint:recommended', 'plugin:import/errors'],
 	parser: 'babel-eslint',
 	parserOptions: {
 		ecmaVersion: 2018,
@@ -56,6 +56,26 @@ module.exports = {
 				avoidEscape: true
 			}
 		],
-		'generator-star-spacing': ['error', {after: false, before: false}]
+		'generator-star-spacing': ['error', {after: false, before: false}],
+		'react/jsx-sort-props': [
+			'error',
+			{
+				callbacksLast: false,
+				shorthandFirst: false,
+				shorthandLast: false,
+				ignoreCase: false,
+				noSortAlphabetically: true,
+				reservedFirst: true
+			}
+		],
+		'react/jsx-no-target-blank': 'off',
+		'react/no-unsafe': 'warn',
+		'react/no-did-mount-set-state': 'error',
+		'no-warning-comments': 'warn'
+	},
+	settings: {
+		react: {
+			version: '16.5.2'
+		}
 	}
 };
