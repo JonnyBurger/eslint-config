@@ -5,7 +5,8 @@ module.exports = {
 	env: {
 		node: true,
 		browser: true,
-		es6: true
+		es6: true,
+		jest: true
 	},
 	plugins: [...xoReact.plugins, 'react-native', 'promise'],
 	extends: ['eslint:recommended', 'plugin:import/errors'],
@@ -105,6 +106,7 @@ module.exports = {
 	settings: {
 		react: {
 			version: '16.5.2'
-		}
+		},
+		'import/ignore': ['expo']
 	}
 };
