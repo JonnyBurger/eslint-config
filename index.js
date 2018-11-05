@@ -73,6 +73,7 @@ module.exports = {
 		'react/no-unsafe': 'warn',
 		'react/no-did-mount-set-state': 'error',
 		'react/no-deprecated': 'warn',
+		'react/no-this-in-sfc': 'error',
 		'no-warning-comments': 'warn',
 		'react-native/no-unused-styles': 'error',
 		'import/no-absolute-path': 'error',
@@ -97,12 +98,6 @@ module.exports = {
 		'promise/no-promise-in-callback': 'error',
 		'promise/valid-params': 'error'
 	},
-	overrides: [
-		{
-			files: 'web/**',
-			rules: {'react-native/no-raw-text': 'off'}
-		}
-	],
 	settings: {
 		react: {
 			version: '16.5.2'
