@@ -74,6 +74,7 @@ module.exports = {
 		'react/no-did-mount-set-state': 'error',
 		'react/no-deprecated': 'warn',
 		'react/no-this-in-sfc': 'error',
+		'react/no-direct-mutation-state': 'error',
 		'no-warning-comments': 'warn',
 		'react-native/no-unused-styles': 'error',
 		'import/no-absolute-path': 'error',
