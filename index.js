@@ -97,7 +97,14 @@ module.exports = {
 		'promise/catch-or-return': 'error',
 		'promise/no-nesting': 'error',
 		'promise/no-promise-in-callback': 'error',
-		'promise/valid-params': 'error'
+		'promise/valid-params': 'error',
+		'no-shadow': [
+			'error',
+			{
+				builtInGlobals: true,
+				hoist: 'all'
+			}
+		]
 	},
 	settings: {
 		react: {
