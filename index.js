@@ -101,7 +101,7 @@ module.exports = {
 		'no-shadow': [
 			'error',
 			{
-				builtinGlobals: true,
+				builtinGlobals: false,
 				hoist: 'all'
 			}
 		]
