@@ -33,6 +33,7 @@ module.exports = {
 				SwitchCase: 1
 			}
 		],
+		'@typescript-eslint/indent': 'off',
 		'react/prop-types': 'off',
 		camelcase: 'off',
 		'guard-for-in': 'off',
@@ -82,7 +83,6 @@ module.exports = {
 		'react/no-this-in-sfc': 'error',
 		'react/no-direct-mutation-state': 'error',
 		'no-warning-comments': 'warn',
-		'react-native/no-unused-styles': 'error',
 		'import/no-absolute-path': 'error',
 		'import/no-dynamic-require': 'error',
 		'import/no-self-import': 'error',
