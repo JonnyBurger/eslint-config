@@ -8,11 +8,16 @@ module.exports = {
 		es6: true,
 		jest: true
 	},
-	plugins: [...xoReact.plugins, 'react-native', 'promise'],
-	extends: ['eslint:recommended', 'plugin:import/errors'],
-	parser: 'babel-eslint',
+	plugins: [...xoReact.plugins, 'promise'],
+	extends: [
+		'plugin:@typescript-eslint/recommended',
+		'eslint:recommended',
+		'plugin:import/errors'
+	],
+	parser: '@typescript-eslint',
 	parserOptions: {
 		ecmaVersion: 2018,
+		sourceType: 'module',
 		ecmaFeatures: {
 			jsx: true
 		}
