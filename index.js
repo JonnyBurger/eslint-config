@@ -36,6 +36,7 @@ module.exports = {
 		'@typescript-eslint/indent': 'off',
 		'react/prop-types': 'off',
 		camelcase: 'off',
+		'@typescript-eslint/camelcase': 'off',
 		'guard-for-in': 'off',
 		'react/forbid-component-props': 'off',
 		'prefer-const': 'off',
