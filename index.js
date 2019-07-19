@@ -98,6 +98,10 @@ module.exports = {
 		'import/newline-after-import': 'error',
 		'import/order': 'error',
 		'import/no-unassigned-import': 'error',
+		// False triggers on TS
+		'import/no-unresolved': 'off',
+		// False triggers on TS
+		'no-unused-vars': 'off',
 		'import/extensions': ['error', 'never', {json: 'always'}],
 		'promise/no-return-wrap': 'error',
 		'promise/param-names': 'error',
