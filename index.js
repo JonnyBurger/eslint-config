@@ -122,5 +122,13 @@ module.exports = {
 			version: '16.5.2'
 		},
 		'import/ignore': ['expo']
-	}
+	},
+	overrides: [
+		{
+			files: ['**.js'],
+			rules: {
+				'@typescript-eslint/no-var-requires': 'off'
+			}
+		}
+	]
 };
