@@ -8,11 +8,12 @@ module.exports = {
 		es6: true,
 		jest: true
 	},
-	plugins: [...xoReact.plugins, 'promise'],
+	plugins: [...xoReact.plugins, 'promise', 'prettier'],
 	extends: [
 		'plugin:@typescript-eslint/recommended',
 		'eslint:recommended',
-		'plugin:import/errors'
+		'plugin:import/errors',
+		'prettier'
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
