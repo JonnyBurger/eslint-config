@@ -8,7 +8,7 @@ module.exports = {
 		es6: true,
 		jest: true
 	},
-	plugins: [...xoReact.plugins, 'promise', 'prettier'],
+	plugins: [...xoReact.plugins, 'promise', '@typescript-eslint/eslint-plugin'],
 	extends: [
 		'plugin:@typescript-eslint/recommended',
 		'eslint:recommended',
@@ -120,7 +120,7 @@ module.exports = {
 	},
 	settings: {
 		react: {
-			version: '16.5.2'
+			version: '16.8.6'
 		},
 		'import/ignore': ['expo']
 	},
