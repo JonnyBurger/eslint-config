@@ -26,17 +26,10 @@ module.exports = {
 	rules: {
 		...xo.rules,
 		...xoReact.rules,
-		indent: 'off',
-		'indent-legacy': [
-			'error',
-			'tab',
-			{
-				SwitchCase: 1
-			}
-		],
-		'@typescript-eslint/indent': 'off',
 		'react/prop-types': 'off',
 		camelcase: 'off',
+		// Prettier will take care of it
+		'@typescript-eslint/indent': 'off',
 		'@typescript-eslint/camelcase': 'off',
 		'guard-for-in': 'off',
 		'react/forbid-component-props': 'off',
@@ -103,6 +96,8 @@ module.exports = {
 		'import/no-unresolved': 'off',
 		// False triggers on TS
 		'no-unused-vars': 'off',
+		// Too slow
+		'import/no-cycle': 'off',
 		'import/extensions': ['error', 'never', {json: 'always'}],
 		'promise/no-return-wrap': 'error',
 		'promise/param-names': 'error',
@@ -116,7 +111,9 @@ module.exports = {
 				builtinGlobals: false,
 				hoist: 'all'
 			}
-		]
+		],
+		// Leads to errors like <>'     '</>
+		'react/jsx-fragments': 'off'
 	},
 	settings: {
 		react: {
