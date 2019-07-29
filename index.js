@@ -122,7 +122,8 @@ module.exports = {
 		'@typescript-eslint/explicit-member-accessibility': 'off',
 		'@typescript-eslint/no-explicit-any': 'off',
 		// Conflicts with prettier
-		'react/jsx-curly-newline': 'off'
+		'react/jsx-curly-newline': 'off',
+		'require-atomic-updates': 'off'
 	},
 	settings: {
 		react: {
