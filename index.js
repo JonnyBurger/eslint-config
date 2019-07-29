@@ -45,7 +45,6 @@ module.exports = {
 		'space-before-function-paren': 'off',
 		'react/jsx-child-element-spacing': 'off',
 		'no-template-curly-in-string': 'error',
-		'require-atomic-updates': 'error',
 		'default-case': 'error',
 		'no-unused-vars': [
 			'error',
@@ -99,6 +98,8 @@ module.exports = {
 		// Too slow
 		'import/no-cycle': 'off',
 		'import/extensions': ['error', 'never', {json: 'always'}],
+		// Slow
+		'import/no-self-import': 'off',
 		'promise/no-return-wrap': 'error',
 		'promise/param-names': 'error',
 		'promise/catch-or-return': 'error',
@@ -113,7 +114,15 @@ module.exports = {
 			}
 		],
 		// Leads to errors like <>'     '</>
-		'react/jsx-fragments': 'off'
+		'react/jsx-fragments': 'off',
+		// We don't want to name it IState
+		'@typescript-eslint/interface-name-prefix': 'off',
+		'@typescript-eslint/camelcase': 'off',
+		'@typescript-eslint/no-var-requires': 'off',
+		'@typescript-eslint/explicit-member-accessibility': 'off',
+		'@typescript-eslint/no-explicit-any': 'off',
+		// Conflicts with prettier
+		'react/jsx-curly-newline': 'off'
 	},
 	settings: {
 		react: {
