@@ -1,6 +1,6 @@
 {
   "name": "@jonny/eslint-config",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "Jonny's ESLint config",
   "main": "index.js",
   "scripts": {
@@ -34,6 +34,6 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.6.1",
-    "eslint-plugin-react-native-normalized": "^1.0.3"
+    "eslint-plugin-react-native-normalized": "^1.0.4"
   }
 }
