@@ -8,7 +8,12 @@ module.exports = {
 		es6: true,
 		jest: true
 	},
-	plugins: [...xoReact.plugins, 'promise', '@typescript-eslint/eslint-plugin'],
+	plugins: [
+		...xoReact.plugins,
+		'promise',
+		'@typescript-eslint/eslint-plugin',
+		'react-native-normalized'
+	],
 	extends: [
 		'plugin:@typescript-eslint/recommended',
 		'eslint:recommended',
@@ -45,6 +50,7 @@ module.exports = {
 		'space-before-function-paren': 'off',
 		'react/jsx-child-element-spacing': 'off',
 		'no-template-curly-in-string': 'error',
+		'react-native-normalized/forbid-native-components': 'error',
 		'default-case': 'error',
 		'no-unused-vars': [
 			'error',
