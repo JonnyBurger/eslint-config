@@ -63,7 +63,7 @@ module.exports = {
 				avoidEscape: true
 			}
 		],
-		'generator-star-spacing': ['error', {after: false, before: false}],
+		'generator-star-spacing': 'off',
 		'react/jsx-sort-props': [
 			'error',
 			{
