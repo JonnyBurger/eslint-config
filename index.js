@@ -127,6 +127,7 @@ module.exports = {
 		'@typescript-eslint/no-var-requires': 'off',
 		'@typescript-eslint/explicit-member-accessibility': 'off',
 		'@typescript-eslint/no-explicit-any': 'off',
+		'@typescript-eslint/ban-ts-ignore': 'off',
 		// Conflicts with prettier
 		'react/jsx-curly-newline': 'off',
 		'require-atomic-updates': 'off'
