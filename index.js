@@ -95,7 +95,7 @@ module.exports = {
 		'import/no-duplicates': 'error',
 		'import/first': 'error',
 		'import/newline-after-import': 'error',
-		'import/order': 'error',
+		'import/order': 'warn',
 		'import/no-unassigned-import': 'error',
 		// False triggers on TS
 		'import/no-unresolved': 'off',
