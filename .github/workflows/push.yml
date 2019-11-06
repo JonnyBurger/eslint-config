@@ -12,12 +12,19 @@ jobs:
       INCREMENT_BUILD_ID: ${{ secrets.INCREMENT_BUILD_ID }}
     steps:
       - uses: actions/checkout@master
+      - name: Cache
+        uses: actions/cache@v1.0.0
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install
         run: |
           npm install
       - name: Publish
         run: |
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-          node -e "a=require('./package.json');a.version="2.1.($(curl https://increment.build/$INCREMENT_BUILD_ID));require('fs').writeFileSync('pacakge.json', JSON.stringify(a, null, 2))"
+          node -e "a=require('./package.json');a.version='2.1.$(curl https://increment.build/$INCREMENT_BUILD_ID)';require('fs').writeFileSync('package.json', JSON.stringify(a, null, 2))"
           npm publish --access=public
         
