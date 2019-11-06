@@ -5,7 +5,7 @@ I am thinking of how I can speed up my workflow and create many apps fast.
 
 So I decided to make a ESLint configuration that I use for all of my projects.
 
-Every commit that is tagged with v1.x.x. automatically gets published to npm!
+Every commit automatically gets published to npm!
 
 ## Installing
 
