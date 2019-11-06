@@ -52,10 +52,6 @@ module.exports = {
 		'no-template-curly-in-string': 'error',
 		'react-native-normalized/forbid-native-components': 'error',
 		'default-case': 'error',
-		'no-unused-vars': [
-			'error',
-			{vars: 'all', args: 'after-used', ignoreRestSiblings: true}
-		],
 		quotes: [
 			'error',
 			'single',
@@ -99,8 +95,15 @@ module.exports = {
 		'import/no-unassigned-import': 'error',
 		// False triggers on TS
 		'import/no-unresolved': 'off',
-		// False triggers on TS
 		'no-unused-vars': 'off',
+		'@typescript-eslint/no-unused-vars': [
+			'error',
+			{
+				vars: 'all',
+				args: 'after-used',
+				ignoreRestSiblings: true
+			}
+		],
 		// Too slow
 		'import/no-cycle': 'off',
 		'import/extensions': ['error', 'never', {json: 'always'}],
