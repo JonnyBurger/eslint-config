@@ -133,6 +133,8 @@ module.exports = {
 		'@typescript-eslint/ban-ts-ignore': 'off',
 		// Conflicts with prettier
 		'react/jsx-curly-newline': 'off',
+		// currently has a bug
+		'react/jsx-curly-brace-presence': 'off',
 		'require-atomic-updates': 'off'
 	},
 	settings: {
