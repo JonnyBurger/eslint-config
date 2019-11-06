@@ -1,0 +1,22 @@
+on: push
+name: Install and Test
+jobs:
+  install:
+    name: Install
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@master
+      - name: Install
+        uses: 4Catalyzer/action-yarn@master
+        with:
+          args: install
+      - name: Test
+        uses: 4Catalyzer/action-yarn@master
+        with:
+          args: test
+      - name: Publish
+        run: |
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+          npm publish --access=public
