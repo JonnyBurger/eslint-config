@@ -13,12 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Install
-        uses: 4Catalyzer/action-yarn@master
-        with:
-          args: install
+        run: |
+          npm install
       - name: Publish
         run: |
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
           node -e "a=require('./package.json');a.version="2.1.($(curl https://increment.build/$INCREMENT_BUILD_ID));require('fs').writeFileSync('pacakge.json', JSON.stringify(a, null, 2))"
           npm publish --access=public
         
