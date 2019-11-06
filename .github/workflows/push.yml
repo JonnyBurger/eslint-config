@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      INCREMENT_BUILD_ID: ${{ secrets.INCREMENT_BUILD_ID }}
     steps:
       - uses: actions/checkout@master
       - name: Install
@@ -18,5 +19,6 @@ jobs:
       - name: Publish
         run: |
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+          node -e "a=require('./package.json');a.version="2.1.($(curl https://increment.build/$INCREMENT_BUILD_ID));require('fs').writeFileSync('pacakge.json', JSON.stringify(a, null, 2))"
           npm publish --access=public
         
