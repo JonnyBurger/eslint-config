@@ -90,6 +90,8 @@ module.exports = {
 		'import/no-mutable-exports': 'error',
 		'import/no-duplicates': 'error',
 		'import/first': 'error',
+		// not working well with TS
+		'import/named': 'off',
 		'import/newline-after-import': 'error',
 		'import/order': 'warn',
 		'import/no-unassigned-import': 'error',
