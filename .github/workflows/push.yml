@@ -24,7 +24,7 @@ jobs:
         run: |
           npm install
       - name: Publish
-        if: startsWith(github.ref, 'master')
+        if: github.ref == 'master'
         run: |
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
           node -e "a=require('./package.json');a.version='2.1.$(curl https://increment.build/$INCREMENT_BUILD_ID)';require('fs').writeFileSync('package.json', JSON.stringify(a, null, 2))"
