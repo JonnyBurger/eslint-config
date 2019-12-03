@@ -98,7 +98,8 @@ module.exports = {
     // False triggers on TS
     "import/no-unresolved": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/prefer-optional-chain": "off",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -134,6 +135,7 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/require-await": "error",
     // Conflicts with prettier
     "react/jsx-curly-newline": "off",
     // currently has a bug
