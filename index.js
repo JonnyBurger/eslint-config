@@ -99,7 +99,6 @@ module.exports = {
     "import/no-unresolved": "off",
     "no-unused-vars": "off",
     "@typescript-eslint/prefer-optional-chain": "error",
-    "@typescript-eslint/no-floating-promises": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
