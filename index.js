@@ -134,7 +134,6 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-ts-ignore": "off",
-    "@typescript-eslint/require-await": "error",
     // Conflicts with prettier
     "react/jsx-curly-newline": "off",
     // currently has a bug
