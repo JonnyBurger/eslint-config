@@ -1,6 +1,5 @@
 const xo = require("eslint-config-xo/esnext");
 const xoReact = require("eslint-config-xo-react");
-const lodash = require("eslint-plugin-lodash");
 
 module.exports = {
   env: {
@@ -13,7 +12,8 @@ module.exports = {
     ...xoReact.plugins,
     "promise",
     "@typescript-eslint/eslint-plugin",
-    "react-native-normalized"
+    "react-native-normalized",
+    "lodash"
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
