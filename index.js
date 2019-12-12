@@ -1,5 +1,6 @@
 const xo = require("eslint-config-xo/esnext");
 const xoReact = require("eslint-config-xo-react");
+const lodash = require("eslint-plugin-lodash");
 
 module.exports = {
   env: {
@@ -138,7 +139,8 @@ module.exports = {
     "react/jsx-curly-newline": "off",
     // currently has a bug
     "react/jsx-curly-brace-presence": "off",
-    "require-atomic-updates": "off"
+    "require-atomic-updates": "off",
+    "lodash/import-scope": "error"
   },
   settings: {
     react: {
