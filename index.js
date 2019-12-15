@@ -19,7 +19,8 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "plugin:import/errors",
-    "prettier"
+    "prettier",
+    "small-import"
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -140,7 +141,8 @@ module.exports = {
     // currently has a bug
     "react/jsx-curly-brace-presence": "off",
     "require-atomic-updates": "off",
-    "lodash/import-scope": "error"
+    "lodash/import-scope": "error",
+    "small-import/no-full-import": "error"
   },
   settings: {
     react: {
