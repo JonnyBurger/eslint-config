@@ -13,14 +13,13 @@ module.exports = {
     "promise",
     "@typescript-eslint/eslint-plugin",
     "react-native-normalized",
-    "lodash"
+    "small-import"
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "plugin:import/errors",
-    "prettier",
-    "small-import"
+    "prettier"
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -141,7 +140,6 @@ module.exports = {
     // currently has a bug
     "react/jsx-curly-brace-presence": "off",
     "require-atomic-updates": "off",
-    "lodash/import-scope": "error",
     "small-import/no-full-import": "error"
   },
   settings: {
