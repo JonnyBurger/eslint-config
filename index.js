@@ -128,6 +128,7 @@ module.exports = {
     ],
     // Leads to errors like <>'     '</>
     "react/jsx-fragments": "off",
+    "react/jsx-closing-tag-location": "off",
     // We don't want to name it IState
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/camelcase": "off",
