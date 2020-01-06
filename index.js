@@ -80,6 +80,7 @@ module.exports = {
     "react/no-this-in-sfc": "error",
     "react/no-direct-mutation-state": "error",
     "no-warning-comments": "warn",
+    "react/jsx-indent-props": "error",
     "import/no-absolute-path": "error",
     "import/no-dynamic-require": "error",
     "import/no-self-import": "error",
