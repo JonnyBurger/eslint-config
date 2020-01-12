@@ -3,7 +3,7 @@ name: Install and Test
 jobs:
   install:
     name: Test
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       INCREMENT_BUILD_ID: ${{ secrets.INCREMENT_BUILD_ID }}
