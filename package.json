@@ -35,6 +35,7 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.2.0",
     "eslint-plugin-react-native-normalized": "^1.0.4",
-    "eslint-plugin-small-import": "^1.0.0"
+    "eslint-plugin-small-import": "^1.0.0",
+    "eslint-plugin-tenx": "^1.0.6"
   }
 }

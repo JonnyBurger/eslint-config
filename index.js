@@ -8,12 +8,16 @@ module.exports = {
     es6: true,
     jest: true
   },
+  globals: {
+    Text: true
+  },
   plugins: [
     ...xoReact.plugins,
     "promise",
     "@typescript-eslint/eslint-plugin",
     "react-native-normalized",
-    "small-import"
+    "small-import",
+    "tenx"
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
@@ -141,7 +145,30 @@ module.exports = {
     // currently has a bug
     "react/jsx-curly-brace-presence": "off",
     "require-atomic-updates": "off",
-    "small-import/no-full-import": "error"
+    "small-import/no-full-import": "error",
+    "tenx/react-in-scope": "error",
+    "tenx/auto-import": [
+      "error",
+      {
+        imports: {
+          styled: "import styled from 'styled-components'",
+          sortBy: "import sortBy from 'lodash/sortBy'",
+          groupBy: "import groupBy from 'lodash/groupBy'",
+          View: "import {View} from 'react-native'",
+          Text: "import {Text} from 'react-native-normalized'",
+          Image: "import {Image} from 'react-native-normalized'",
+          TextInput: "import {TextInput} from 'react-native-normalized'",
+          ScrollView: "import {ScrollView} from 'react-native'",
+          TouchableHighlight: "import {TouchableHighlight} from 'react-native'",
+          ActivityIndicator:
+            "import {ActivityIndicator} from 'react-native-normalized'",
+          lighten: "import {lighten} from 'polished'",
+          and: "import {and} from 'react-native-reanimated'",
+          add: "import {add} from 'react-native-reanimated'",
+          sub: "import {sub} from 'react-native-reanimated'"
+        }
+      }
+    ]
   },
   settings: {
     react: {
