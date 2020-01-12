@@ -16,7 +16,6 @@ module.exports = {
     "promise",
     "@typescript-eslint/eslint-plugin",
     "react-native-normalized",
-    "small-import",
     "tenx"
   ],
   extends: [
@@ -146,7 +145,7 @@ module.exports = {
     // currently has a bug
     "react/jsx-curly-brace-presence": "off",
     "require-atomic-updates": "off",
-    "small-import/no-full-import": "error",
+    "tenx/no-full-import": "error",
     "tenx/react-in-scope": "error",
     "tenx/auto-import": [
       "error",
