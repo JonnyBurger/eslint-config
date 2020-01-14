@@ -151,6 +151,7 @@ module.exports = {
       "error",
       {
         imports: {
+          xns: "import xns from 'xns'",
           styled: "import styled from 'styled-components'",
           sortBy: "import sortBy from 'lodash/sortBy'",
           groupBy: "import groupBy from 'lodash/groupBy'",
