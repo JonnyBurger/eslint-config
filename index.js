@@ -16,7 +16,7 @@ module.exports = {
     "promise",
     "@typescript-eslint/eslint-plugin",
     "react-native-normalized",
-    "tenx"
+    "10x"
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
@@ -145,9 +145,9 @@ module.exports = {
     // currently has a bug
     "react/jsx-curly-brace-presence": "off",
     "require-atomic-updates": "off",
-    "tenx/no-full-import": "error",
-    "tenx/react-in-scope": "error",
-    "tenx/auto-import": [
+    "10x/no-full-import": "error",
+    "10x/react-in-scope": "error",
+    "10x/auto-import": [
       "error",
       {
         imports: {
@@ -167,6 +167,16 @@ module.exports = {
           and: "import {and} from 'react-native-reanimated'",
           add: "import {add} from 'react-native-reanimated'",
           sub: "import {sub} from 'react-native-reanimated'"
+          getWeeksInMonth: "import {getWeeksInMonth} from 'date-fns'",
+          startOfMonth: "import {startOfMonth} from 'date-fns'",
+          getDaysInMonth: "import {getDaysInMonth} from 'date-fns'",
+          getISODay: "import {getISODay} from 'date-fns'",
+          format: "import {format} from 'date-fns'",
+          getWeek: "import {getWeek} from 'date-fns'",
+          setDate: "import {setDate} from 'date-fns'",
+          getWeek: "import {getWeek} from 'date-fns'",
+          endOfWeek: "import {endOfWeek} from 'date-fns'",
+          startOfWeek: "import {startOfWeek} from 'date-fns'"
         }
       }
     ]
