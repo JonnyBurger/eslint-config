@@ -39,7 +39,6 @@ module.exports = {
     camelcase: "off",
     // Prettier will take care of it
     "@typescript-eslint/indent": "off",
-    "@typescript-eslint/camelcase": "off",
     "guard-for-in": "off",
     "react/forbid-component-props": "off",
     "no-console": "off",
@@ -86,8 +85,6 @@ module.exports = {
     "react/jsx-indent-props": "off",
     "import/no-absolute-path": "error",
     "import/no-dynamic-require": "error",
-    "import/no-self-import": "error",
-    "import/no-cycle": "error",
     "import/no-useless-path-segments": "error",
     "import/no-named-as-default": "error",
     "import/no-named-as-default-member": "error",
@@ -166,7 +163,7 @@ module.exports = {
           lighten: "import {lighten} from 'polished'",
           and: "import {and} from 'react-native-reanimated'",
           add: "import {add} from 'react-native-reanimated'",
-          sub: "import {sub} from 'react-native-reanimated'"
+          sub: "import {sub} from 'react-native-reanimated'",
           getWeeksInMonth: "import {getWeeksInMonth} from 'date-fns'",
           startOfMonth: "import {startOfMonth} from 'date-fns'",
           getDaysInMonth: "import {getDaysInMonth} from 'date-fns'",
@@ -174,7 +171,6 @@ module.exports = {
           format: "import {format} from 'date-fns'",
           getWeek: "import {getWeek} from 'date-fns'",
           setDate: "import {setDate} from 'date-fns'",
-          getWeek: "import {getWeek} from 'date-fns'",
           endOfWeek: "import {endOfWeek} from 'date-fns'",
           startOfWeek: "import {startOfWeek} from 'date-fns'"
         }
