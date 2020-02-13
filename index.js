@@ -144,6 +144,7 @@ module.exports = {
     "require-atomic-updates": "off",
     "10x/no-full-import": "error",
     "10x/react-in-scope": "error",
+    "prefer-named-capture-group": "off",
     "10x/auto-import": [
       "error",
       {
