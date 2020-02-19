@@ -22,7 +22,8 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "plugin:import/errors",
-    "prettier"
+    "prettier",
+    "plugin:ava/recommended"
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
