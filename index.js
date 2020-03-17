@@ -56,6 +56,7 @@ module.exports = {
     "no-template-curly-in-string": "error",
     "react-native-normalized/forbid-native-components": "error",
     "default-case": "error",
+    "ava/no-ignored-test-files": "off",
     quotes: [
       "error",
       "single",
