@@ -76,7 +76,6 @@ module.exports = {
         reservedFirst: true
       }
     ],
-    "react/self-closing-comp": "off",
     "react/jsx-no-target-blank": "off",
     "react/no-unsafe": "warn",
     "react/no-did-mount-set-state": "error",
