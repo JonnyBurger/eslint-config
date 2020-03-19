@@ -36,6 +36,13 @@ module.exports = {
   rules: {
     ...xo.rules,
     ...xoReact.rules,
+    "react/self-closing-comp": [
+      "warn",
+      {
+        component: true,
+        html: true
+      }
+    ],
     "react/prop-types": "off",
     camelcase: "off",
     // Prettier will take care of it
