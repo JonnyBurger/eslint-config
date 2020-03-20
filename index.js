@@ -107,7 +107,7 @@ module.exports = {
     "import/no-relative-parent-imports": "error",
     "import/newline-after-import": "error",
     "import/order": "warn",
-    "import/no-unassigned-import": "error",
+    "import/no-unassigned-import": "off",
     // False triggers on TS
     "import/no-unresolved": "off",
     "no-unused-vars": "off",
