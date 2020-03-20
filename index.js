@@ -98,20 +98,20 @@ module.exports = {
     "import/no-named-as-default-member": "error",
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
-    "import/no-unused-modules": ["error", { unusedExports: true }],
     "import/no-duplicates": "error",
     "import/first": "error",
     // not working well with TS
     "import/named": "off",
     "import/namespace": "error",
+    "import/export": "error",
+    "import/no-relative-parent-imports": "error",
     "import/newline-after-import": "error",
     "import/order": "warn",
     "import/no-unassigned-import": "error",
     // False triggers on TS
     "import/no-unresolved": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/prefer-optional-chain": "error",
-    "@typescript-eslint/prefer-interface": "off",
+    "switch-exhaustiveness-check": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -146,8 +146,10 @@ module.exports = {
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
-    "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/prefer-interface": "off",
     // Conflicts with prettier
     "react/jsx-curly-newline": "off",
     // currently has a bug
