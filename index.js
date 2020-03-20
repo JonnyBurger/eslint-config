@@ -9,7 +9,7 @@ module.exports = {
     jest: true
   },
   globals: {
-    Text: true
+    Text: "off"
   },
   plugins: [
     ...xoReact.plugins,
@@ -109,6 +109,7 @@ module.exports = {
     "import/no-unresolved": "off",
     "no-unused-vars": "off",
     "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/prefer-interface": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -155,33 +156,7 @@ module.exports = {
     "10x/auto-import": [
       "error",
       {
-        imports: {
-          xns: "import xns from 'xns'",
-          styled: "import styled from 'styled-components'",
-          sortBy: "import sortBy from 'lodash/sortBy'",
-          groupBy: "import groupBy from 'lodash/groupBy'",
-          View: "import {View} from 'react-native'",
-          Text: "import {Text} from 'react-native-normalized'",
-          Image: "import {Image} from 'react-native-normalized'",
-          TextInput: "import {TextInput} from 'react-native-normalized'",
-          ScrollView: "import {ScrollView} from 'react-native'",
-          TouchableHighlight: "import {TouchableHighlight} from 'react-native'",
-          ActivityIndicator:
-            "import {ActivityIndicator} from 'react-native-normalized'",
-          lighten: "import {lighten} from 'polished'",
-          and: "import {and} from 'react-native-reanimated'",
-          add: "import {add} from 'react-native-reanimated'",
-          sub: "import {sub} from 'react-native-reanimated'",
-          getWeeksInMonth: "import {getWeeksInMonth} from 'date-fns'",
-          startOfMonth: "import {startOfMonth} from 'date-fns'",
-          getDaysInMonth: "import {getDaysInMonth} from 'date-fns'",
-          getISODay: "import {getISODay} from 'date-fns'",
-          format: "import {format} from 'date-fns'",
-          getWeek: "import {getWeek} from 'date-fns'",
-          setDate: "import {setDate} from 'date-fns'",
-          endOfWeek: "import {endOfWeek} from 'date-fns'",
-          startOfWeek: "import {startOfWeek} from 'date-fns'"
-        }
+        imports: require("./auto-import-rules")
       }
     ]
   },
