@@ -111,7 +111,7 @@ module.exports = {
     // False triggers on TS
     "import/no-unresolved": "off",
     "no-unused-vars": "off",
-    "switch-exhaustiveness-check": "error",
+    "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
