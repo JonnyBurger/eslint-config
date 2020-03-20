@@ -98,10 +98,12 @@ module.exports = {
     "import/no-named-as-default-member": "error",
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
+    "import/no-unused-modules": ["error", { unusedExports: true }],
     "import/no-duplicates": "error",
     "import/first": "error",
     // not working well with TS
     "import/named": "off",
+    "import/namespace": "error",
     "import/newline-after-import": "error",
     "import/order": "warn",
     "import/no-unassigned-import": "error",
