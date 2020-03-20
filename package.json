@@ -15,7 +15,8 @@
     "config"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "auto-import-rules.js"
   ],
   "author": "Jonny Burger <jonny.io>",
   "license": "ISC",
