@@ -104,7 +104,6 @@ module.exports = {
     "import/named": "off",
     "import/namespace": "error",
     "import/export": "error",
-    "import/no-relative-parent-imports": "error",
     "import/newline-after-import": "error",
     "import/order": "warn",
     "import/no-unassigned-import": "off",
