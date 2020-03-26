@@ -102,7 +102,7 @@ module.exports = {
     "import/first": "error",
     // not working well with TS
     "import/named": "off",
-    "import/namespace": "error",
+    "import/namespace": "off",
     "import/export": "error",
     "import/newline-after-import": "error",
     "import/order": "warn",
