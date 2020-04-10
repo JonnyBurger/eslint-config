@@ -6,32 +6,32 @@ module.exports = {
     node: true,
     browser: true,
     es6: true,
-    jest: true
+    jest: true,
   },
   globals: {
-    Text: "off"
+    Text: "off",
   },
   plugins: [
     ...xoReact.plugins,
     "promise",
     "@typescript-eslint/eslint-plugin",
     "react-native-normalized",
-    "10x"
+    "10x",
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "plugin:import/errors",
     "prettier",
-    "plugin:ava/recommended"
+    "plugin:ava/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: "module",
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   rules: {
     ...xo.rules,
@@ -40,8 +40,8 @@ module.exports = {
       "warn",
       {
         component: true,
-        html: true
-      }
+        html: true,
+      },
     ],
     "react/prop-types": "off",
     camelcase: "off",
@@ -68,8 +68,8 @@ module.exports = {
       "error",
       "single",
       {
-        avoidEscape: true
-      }
+        avoidEscape: true,
+      },
     ],
     "generator-star-spacing": "off",
     "react/jsx-sort-props": [
@@ -80,8 +80,8 @@ module.exports = {
         shorthandLast: false,
         ignoreCase: false,
         noSortAlphabetically: true,
-        reservedFirst: true
-      }
+        reservedFirst: true,
+      },
     ],
     "react/jsx-no-target-blank": "off",
     "react/no-unsafe": "warn",
@@ -105,7 +105,6 @@ module.exports = {
     "import/namespace": "off",
     "import/export": "error",
     "import/newline-after-import": "error",
-    "import/order": "warn",
     "import/no-unassigned-import": "off",
     // False triggers on TS
     "import/no-unresolved": "off",
@@ -115,8 +114,8 @@ module.exports = {
       {
         vars: "all",
         args: "after-used",
-        ignoreRestSiblings: true
-      }
+        ignoreRestSiblings: true,
+      },
     ],
     // Too slow
     "import/no-cycle": "off",
@@ -133,8 +132,8 @@ module.exports = {
       "error",
       {
         builtinGlobals: false,
-        hoist: "all"
-      }
+        hoist: "all",
+      },
     ],
     // Leads to errors like <>'     '</>
     "react/jsx-fragments": "off",
@@ -158,22 +157,22 @@ module.exports = {
     "10x/auto-import": [
       "error",
       {
-        imports: require("./auto-import-rules")
-      }
-    ]
+        imports: require("./auto-import-rules"),
+      },
+    ],
   },
   settings: {
     react: {
-      version: "16.9.0"
+      version: "16.9.0",
     },
-    "import/ignore": ["expo"]
+    "import/ignore": ["expo"],
   },
   overrides: [
     {
       files: ["**.js"],
       rules: {
-        "@typescript-eslint/no-var-requires": "off"
-      }
-    }
-  ]
+        "@typescript-eslint/no-var-requires": "off",
+      },
+    },
+  ],
 };
