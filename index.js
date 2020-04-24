@@ -117,6 +117,7 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
+    "@typesscript/eslint/await-thenable": "error",
     // Too slow
     "import/no-cycle": "off",
     "import/extensions": ["error", "never", { json: "always" }],
