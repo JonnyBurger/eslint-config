@@ -23,5 +23,7 @@ module.exports = {
   getWeek: "import {getWeek} from 'date-fns'",
   setDate: "import {setDate} from 'date-fns'",
   endOfWeek: "import {endOfWeek} from 'date-fns'",
-  startOfWeek: "import {startOfWeek} from 'date-fns'"
+  startOfWeek: "import {startOfWeek} from 'date-fns'",
+  fs: "import fs from 'fs'",
+  createReadStream: "import {createReadStream} from 'fs'",
 };
