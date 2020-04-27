@@ -26,4 +26,9 @@ module.exports = {
   startOfWeek: "import {startOfWeek} from 'date-fns'",
   fs: "import fs from 'fs'",
   createReadStream: "import {createReadStream} from 'fs'",
+  useEffect: "import {useEffect} from 'react'",
+  useState: "import {useState} from 'react'",
+  useCallback: "import {useCallback} from 'react'",
+  useMemo: "import {useMemo} from 'react'",
+  useReducer: "import {useReducer} from 'react'",
 };
