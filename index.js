@@ -17,6 +17,7 @@ module.exports = {
     "@typescript-eslint/eslint-plugin",
     "react-native-normalized",
     "10x",
+    "fp",
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
@@ -171,6 +172,12 @@ module.exports = {
         allowCallExpression: true, // The true value here is for backward compatibility
         allowLiteral: true,
         allowObject: true,
+      },
+    ],
+    "fp/no-mutating-methods": [
+      "error",
+      {
+        allowedObjects: "lodash",
       },
     ],
   },
