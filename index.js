@@ -177,7 +177,7 @@ module.exports = {
     "fp/no-mutating-methods": [
       "error",
       {
-        allowedObjects: "lodash",
+        allowedObjects: ["lodash"],
       },
     ],
   },
