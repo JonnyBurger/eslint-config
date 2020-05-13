@@ -148,6 +148,10 @@ module.exports = {
     "@typescript-eslint/ban-types": "error",
     "@typescript-eslint/no-base-to-string": "error",
     "@typescript-eslint/prefer-as-const": "error",
+    "@typescript-eslint/prefer-includes": "error",
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "@typescript-eslint/prefer-ts-expect-error": "error",
+    "@typescript-eslint/prefer-regexp-exec": "error",
     "@typescript-eslint/ban-ts-comment": [
       "error",
       {
