@@ -153,15 +153,6 @@ module.exports = {
     "@typescript-eslint/prefer-ts-expect-error": "error",
     "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/prefer-regexp-exec": "error",
-    "@typescript-eslint/ban-ts-comment": [
-      "error",
-      {
-        "ts-expect-error": false,
-        "ts-ignore": true,
-        "ts-nocheck": false,
-        "ts-check": false,
-      },
-    ],
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-interface": "off",
