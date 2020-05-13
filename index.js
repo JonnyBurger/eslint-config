@@ -151,6 +151,7 @@ module.exports = {
     "@typescript-eslint/prefer-includes": "error",
     "@typescript-eslint/prefer-string-starts-ends-with": "error",
     "@typescript-eslint/prefer-ts-expect-error": "error",
+    "@typescript-eslint/switch-exhaustiveness-check": "error",
     "@typescript-eslint/prefer-regexp-exec": "error",
     "@typescript-eslint/ban-ts-comment": [
       "error",
