@@ -146,6 +146,7 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/ban-types": "error",
+    "@typescript-eslint/ban-ts-ignore": "off",
     "@typescript-eslint/no-base-to-string": "error",
     "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-includes": "error",
