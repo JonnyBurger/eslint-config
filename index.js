@@ -145,7 +145,15 @@ module.exports = {
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
-    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "ts-expect-error": false,
+        "ts-ignore": true,
+        "ts-nocheck": false,
+        "ts-check": false,
+      },
+    ],
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-interface": "off",
