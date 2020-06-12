@@ -100,7 +100,10 @@ module.exports = {
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
     "import/no-duplicates": "error",
+    // Slow and superfluos with TS
     "import/first": "error",
+    "import/default": "off",
+    "import/extensions": "off",
     // not working well with TS
     "import/named": "off",
     "import/namespace": "off",
