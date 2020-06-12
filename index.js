@@ -124,7 +124,6 @@ module.exports = {
     "@typescript-eslint/await-thenable": "error",
     // Too slow
     "import/no-cycle": "off",
-    "import/extensions": ["error", "never", { json: "always" }],
     // Slow
     "import/no-self-import": "off",
     "promise/no-return-wrap": "error",
