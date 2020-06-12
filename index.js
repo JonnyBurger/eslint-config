@@ -100,7 +100,10 @@ module.exports = {
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
     "import/no-duplicates": "error",
+    // Slow and superfluos with TS
     "import/first": "error",
+    "import/default": "off",
+    "import/extensions": "off",
     // not working well with TS
     "import/named": "off",
     "import/namespace": "off",
@@ -121,7 +124,6 @@ module.exports = {
     "@typescript-eslint/await-thenable": "error",
     // Too slow
     "import/no-cycle": "off",
-    "import/extensions": ["error", "never", { json: "always" }],
     // Slow
     "import/no-self-import": "off",
     "promise/no-return-wrap": "error",
