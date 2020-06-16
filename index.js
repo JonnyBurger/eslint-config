@@ -65,6 +65,7 @@ module.exports = {
     "react-native-normalized/forbid-native-components": "error",
     "default-case": "error",
     "ava/no-ignored-test-files": "off",
+    "ava/use-test": "off",
     quotes: [
       "error",
       "single",
