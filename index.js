@@ -149,7 +149,7 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/ban-types": "error",
     "@typescript-eslint/ban-ts-ignore": "off",
-    "@typescript-eslint/no-base-to-string": "error",
+    "@typescript-eslint/no-base-to-string": process.env.CI ? "error" : "off",
     "@typescript-eslint/prefer-as-const": "error",
     "@typescript-eslint/prefer-includes": "error",
     "@typescript-eslint/prefer-string-starts-ends-with": "error",
