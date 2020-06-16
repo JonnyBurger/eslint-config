@@ -121,7 +121,7 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
-    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/await-thenable": process.env.CI ? "error" : "off",
     // Too slow
     "import/no-cycle": "off",
     // Slow
