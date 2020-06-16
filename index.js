@@ -24,8 +24,8 @@ module.exports = {
     "eslint:recommended",
     "plugin:import/errors",
     "prettier",
-    "plugin:ava/recommended",
-  ],
+    process.env.CI ? "plugin:ava/recommended" : null,
+  ].filter(Boolean),
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2020,
@@ -95,8 +95,8 @@ module.exports = {
     "import/no-absolute-path": "error",
     "import/no-dynamic-require": "error",
     "import/no-useless-path-segments": "error",
-    "import/no-named-as-default": "error",
-    "import/no-named-as-default-member": "error",
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
     "import/no-extraneous-dependencies": "error",
     "import/no-mutable-exports": "error",
     "import/no-duplicates": "error",
@@ -151,11 +151,15 @@ module.exports = {
     "@typescript-eslint/ban-ts-ignore": "off",
     "@typescript-eslint/no-base-to-string": process.env.CI ? "error" : "off",
     "@typescript-eslint/prefer-as-const": "error",
-    "@typescript-eslint/prefer-includes": "error",
-    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "@typescript-eslint/prefer-includes": process.env.CI ? "error" : "off",
+    "@typescript-eslint/prefer-string-starts-ends-with": process.env.CI
+      ? "error"
+      : "off",
     "@typescript-eslint/prefer-ts-expect-error": "error",
-    "@typescript-eslint/switch-exhaustiveness-check": "error",
-    "@typescript-eslint/prefer-regexp-exec": "error",
+    "@typescript-eslint/switch-exhaustiveness-check": process.env.CI
+      ? "error"
+      : "off",
+    "@typescript-eslint/prefer-regexp-exec": process.env.CI ? "error" : "off",
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-interface": "off",
