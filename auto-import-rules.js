@@ -15,6 +15,7 @@ module.exports = {
   and: "import {and} from 'react-native-reanimated'",
   add: "import {add} from 'react-native-reanimated'",
   sub: "import {sub} from 'react-native-reanimated'",
+  divide: "import {divide} from 'react-native-reanimated'",
   getWeeksInMonth: "import {getWeeksInMonth} from 'date-fns'",
   startOfMonth: "import {startOfMonth} from 'date-fns'",
   getDaysInMonth: "import {getDaysInMonth} from 'date-fns'",
@@ -31,4 +32,6 @@ module.exports = {
   useCallback: "import {useCallback} from 'react'",
   useMemo: "import {useMemo} from 'react'",
   useReducer: "import {useReducer} from 'react'",
+  path: "import path from 'path'",
+  util: "import util from 'util'",
 };
