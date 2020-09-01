@@ -34,4 +34,5 @@ module.exports = {
   useReducer: "import {useReducer} from 'react'",
   path: "import path from 'path'",
   util: "import util from 'util'",
+  execa: "import execa from 'execa'",
 };
