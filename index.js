@@ -24,7 +24,6 @@ module.exports = {
     "eslint:recommended",
     "plugin:import/errors",
     "prettier",
-    process.env.CI ? "plugin:ava/recommended" : null,
   ].filter(Boolean),
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -122,7 +121,6 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
-    "@typescript-eslint/await-thenable": process.env.CI ? "error" : "off",
     // Too slow
     "import/no-cycle": "off",
     // Slow
@@ -150,17 +148,8 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/ban-types": "error",
     "@typescript-eslint/ban-ts-ignore": "off",
-    "@typescript-eslint/no-base-to-string": process.env.CI ? "error" : "off",
     "@typescript-eslint/prefer-as-const": "error",
-    "@typescript-eslint/prefer-includes": process.env.CI ? "error" : "off",
-    "@typescript-eslint/prefer-string-starts-ends-with": process.env.CI
-      ? "error"
-      : "off",
     "@typescript-eslint/prefer-ts-expect-error": "error",
-    "@typescript-eslint/switch-exhaustiveness-check": process.env.CI
-      ? "error"
-      : "off",
-    "@typescript-eslint/prefer-regexp-exec": process.env.CI ? "error" : "off",
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-interface": "off",
