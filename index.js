@@ -195,6 +195,7 @@ module.exports = {
         allowedObjects: ["lodash"],
       },
     ],
+    "react/no-unused-prop-types": "off",
   },
   settings: {
     react: {
