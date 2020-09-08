@@ -131,7 +131,7 @@ module.exports = {
     "promise/no-nesting": "error",
     "promise/no-promise-in-callback": "error",
     "promise/valid-params": "error",
-    "no-shadow": [
+    "@typescript/eslint/no-shadow": [
       "error",
       {
         builtinGlobals: false,
@@ -185,6 +185,8 @@ module.exports = {
       },
     ],
     "react/no-unused-prop-types": "off",
+    "no-shadow": 0,
+    "no-undef": 0,
   },
   settings: {
     react: {
