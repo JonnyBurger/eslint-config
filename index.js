@@ -131,7 +131,7 @@ module.exports = {
     "promise/no-nesting": "error",
     "promise/no-promise-in-callback": "error",
     "promise/valid-params": "error",
-    "@typescript/eslint/no-shadow": [
+    "@typescript-eslint/no-shadow": [
       "error",
       {
         builtinGlobals: false,
