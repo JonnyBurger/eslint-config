@@ -154,6 +154,7 @@ module.exports = {
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/prefer-regexp-exec": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/ban-ts-ignore": "off",
     "@typescript-eslint/prefer-as-const": "error",
