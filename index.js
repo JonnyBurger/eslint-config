@@ -138,15 +138,6 @@ module.exports = {
         hoist: "all",
       },
     ],
-    "@typescript-eslint/ban-types": [
-      "error",
-      {
-        types: {
-          "{}": false,
-        },
-        extendDefaults: true,
-      },
-    ],
     // Leads to errors like <>'     '</>
     "react/jsx-fragments": "off",
     "react/jsx-closing-tag-location": "off",
