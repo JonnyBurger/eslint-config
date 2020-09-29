@@ -155,6 +155,7 @@ module.exports = {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/prefer-optional-chain": "error",
     "@typescript-eslint/prefer-interface": "off",
+    "@typescript-eslint/ban-types": "off",
     // Conflicts with prettier
     "react/jsx-curly-newline": "off",
     // currently has a bug
