@@ -10,6 +10,7 @@ module.exports = {
   },
   globals: {
     Text: "off",
+    StyleSheet: "off",
   },
   plugins: [
     ...xoReact.plugins,
@@ -179,12 +180,6 @@ module.exports = {
         allowCallExpression: true, // The true value here is for backward compatibility
         allowLiteral: true,
         allowObject: true,
-      },
-    ],
-    "fp/no-mutating-methods": [
-      "error",
-      {
-        allowedObjects: ["lodash"],
       },
     ],
     "react/no-unused-prop-types": "off",
