@@ -36,6 +36,7 @@ module.exports = {
   useCallback: "import {useCallback} from 'react'",
   useMemo: "import {useMemo} from 'react'",
   useReducer: "import {useReducer} from 'react'",
+  Fragment: "import {Fragment} from 'react'",
   path: "import path from 'path'",
   util: "import util from 'util'",
   execa: "import execa from 'execa'",

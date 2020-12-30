@@ -3,7 +3,7 @@ name: Install and Test
 jobs:
   install:
     name: Test
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       INCREMENT_BUILD_ID: ${{ secrets.INCREMENT_BUILD_ID }}
@@ -16,4 +16,3 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
           node -e "a=require('./package.json');a.version='2.1.$(curl https://increment.build/$INCREMENT_BUILD_ID)';require('fs').writeFileSync('package.json', JSON.stringify(a, null, 2))"
           npm publish --access=public
-        
