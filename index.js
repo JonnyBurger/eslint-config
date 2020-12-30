@@ -163,7 +163,8 @@ module.exports = {
     "react/jsx-curly-brace-presence": "off",
     "require-atomic-updates": "off",
     "10x/no-full-import": "error",
-    "10x/react-in-scope": "error",
+    "10x/react-in-scope": "off",
+    "react/react-in-jsx-scope": "off",
     "10x/auto-import": [
       "error",
       {
