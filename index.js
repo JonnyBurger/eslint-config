@@ -18,7 +18,7 @@ module.exports = {
     "@typescript-eslint/eslint-plugin",
     "react-native-normalized",
     "10x",
-    "fp",
+    "ts-exports",
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
@@ -186,6 +186,7 @@ module.exports = {
     "react/no-unused-prop-types": "off",
     "no-shadow": 0,
     "no-undef": 0,
+    "ts-exports/unused-exports": "error",
   },
   settings: {
     react: {
