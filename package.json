@@ -39,7 +39,7 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-native-normalized": "^1.0.4",
-    "eslint-plugin-ts-exports": "^1.0.5"
+    "eslint-plugin-ts-exports": "^1.2.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
