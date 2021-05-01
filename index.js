@@ -150,6 +150,7 @@ module.exports = {
     "no-undef": 0,
     "ts-exports/unused-exports": "error",
     "comma-dangle": 0,
+    indent: 0,
   },
   settings: {
     react: {
