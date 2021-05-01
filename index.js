@@ -90,26 +90,6 @@ module.exports = {
     "react/no-direct-mutation-state": "error",
     "no-warning-comments": "warn",
     "react/jsx-indent-props": "off",
-    "import/no-absolute-path": "error",
-    "import/no-dynamic-require": "error",
-    "import/no-useless-path-segments": "off",
-    "import/no-named-as-default": "off",
-    "import/no-named-as-default-member": "off",
-    "import/no-extraneous-dependencies": "error",
-    "import/no-mutable-exports": "error",
-    "import/no-duplicates": "off",
-    // Slow and superfluos with TS
-    "import/first": "error",
-    "import/default": "off",
-    "import/extensions": "off",
-    // not working well with TS
-    "import/named": "off",
-    "import/namespace": "off",
-    "import/export": "error",
-    "import/newline-after-import": "error",
-    "import/no-unassigned-import": "off",
-    // False triggers on TS
-    "import/no-unresolved": "off",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
@@ -119,10 +99,6 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
-    // Too slow
-    "import/no-cycle": "off",
-    // Slow
-    "import/no-self-import": "off",
     "promise/no-return-wrap": "error",
     "promise/param-names": "error",
     "promise/catch-or-return": "error",
@@ -168,18 +144,7 @@ module.exports = {
         imports: require("./auto-import-rules"),
       },
     ],
-    "import/no-anonymous-default-export": [
-      "error",
-      {
-        allowArray: true,
-        allowArrowFunction: false,
-        allowAnonymousClass: false,
-        allowAnonymousFunction: false,
-        allowCallExpression: true, // The true value here is for backward compatibility
-        allowLiteral: true,
-        allowObject: true,
-      },
-    ],
+
     "react/no-unused-prop-types": "off",
     "no-shadow": 0,
     "no-undef": 0,
