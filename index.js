@@ -1,4 +1,4 @@
-const xo = require("eslint-config-xo/esnext");
+const xo = require("eslint-config-xo");
 const xoReact = require("eslint-config-xo-react");
 
 module.exports = {
