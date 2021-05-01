@@ -1,6 +1,6 @@
 const xo = require("eslint-config-xo");
 const xoReact = require("eslint-config-xo-react");
-
+const prettier = require("eslint-config-prettier");
 module.exports = {
   env: {
     node: true,
@@ -23,7 +23,6 @@ module.exports = {
   extends: [
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
-    "prettier",
   ].filter(Boolean),
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -151,6 +150,7 @@ module.exports = {
     "ts-exports/unused-exports": "error",
     "comma-dangle": 0,
     indent: 0,
+    ...prettier.rules,
   },
   settings: {
     react: {
