@@ -149,6 +149,7 @@ module.exports = {
     "no-shadow": 0,
     "no-undef": 0,
     "ts-exports/unused-exports": "error",
+    "comma-dangle": 0,
   },
   settings: {
     react: {
