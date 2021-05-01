@@ -23,7 +23,6 @@ module.exports = {
   extends: [
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
-    "plugin:import/errors",
     "prettier",
   ].filter(Boolean),
   parser: "@typescript-eslint/parser",
@@ -64,8 +63,6 @@ module.exports = {
     "no-template-curly-in-string": "error",
     "react-native-normalized/forbid-native-components": "error",
     "default-case": "error",
-    "ava/no-ignored-test-files": "off",
-    "ava/use-test": "off",
     quotes: [
       "error",
       "single",
