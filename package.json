@@ -39,6 +39,6 @@
     "eslint-plugin-ts-exports": "^1.2.5"
   },
   "devDependencies": {
-    "eslint": ">=7.25.0"
+    "eslint": ">=7.28.0"
   }
 }
