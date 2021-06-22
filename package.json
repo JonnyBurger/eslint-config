@@ -35,7 +35,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-react-native-normalized": "^1.1.1"
+    "eslint-plugin-react-native-normalized": "^1.1.2"
   },
   "devDependencies": {
     "eslint": ">=7.29.0"
