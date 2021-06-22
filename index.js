@@ -14,11 +14,10 @@ module.exports = {
   },
   plugins: [
     ...xoReact.plugins,
-    "promise",
-    "@typescript-eslint/eslint-plugin",
-    "react-native-normalized",
-    "10x",
-    "ts-exports",
+    require.resolve("eslint-plugin-promise"),
+    require.resolve("@typescript-eslint/eslint-plugin"),
+    require.resolve("eslint-plugin-react-native-normalized"),
+    require.resolve("eslint-plugin-10x"),
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
@@ -147,7 +146,6 @@ module.exports = {
     "react/no-unused-prop-types": "off",
     "no-shadow": 0,
     "no-undef": 0,
-    "ts-exports/unused-exports": "error",
     "comma-dangle": 0,
     indent: 0,
     ...prettier.rules,
