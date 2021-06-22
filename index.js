@@ -142,7 +142,7 @@ module.exports = {
         imports: require("./auto-import-rules"),
       },
     ],
-
+    complexity: "off",
     "react/no-unused-prop-types": "off",
     "no-shadow": 0,
     "no-undef": 0,
