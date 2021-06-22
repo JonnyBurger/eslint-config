@@ -14,10 +14,10 @@ module.exports = {
   },
   plugins: [
     ...xoReact.plugins,
-    require.resolve("eslint-plugin-promise"),
-    require.resolve("@typescript-eslint/eslint-plugin"),
-    require.resolve("eslint-plugin-react-native-normalized"),
-    require.resolve("eslint-plugin-10x"),
+    "promise",
+    "@typescript-eslint/eslint-plugin",
+    "react-native-normalized",
+    "10x",
   ],
   extends: [
     "plugin:@typescript-eslint/recommended",
