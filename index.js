@@ -34,6 +34,7 @@ module.exports = {
   rules: {
     ...xo.rules,
     ...xoReact.rules,
+    "arrow-body-style": "off",
     "react/self-closing-comp": [
       "warn",
       {
