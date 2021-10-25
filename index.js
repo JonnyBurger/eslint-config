@@ -149,6 +149,7 @@ module.exports = {
     "no-undef": 0,
     "comma-dangle": 0,
     indent: 0,
+    "require-await": 1,
     ...prettier.rules,
   },
   settings: {
