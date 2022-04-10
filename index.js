@@ -8,17 +8,7 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  globals: {
-    Text: "off",
-    StyleSheet: "off",
-  },
-  plugins: [
-    ...xoReact.plugins,
-    "promise",
-    "@typescript-eslint/eslint-plugin",
-    "react-native-normalized",
-    "10x",
-  ],
+  plugins: [...xoReact.plugins, "@typescript-eslint/eslint-plugin", "10x"],
   extends: [
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
@@ -60,7 +50,6 @@ module.exports = {
     "space-before-function-paren": "off",
     "react/jsx-child-element-spacing": "off",
     "no-template-curly-in-string": "error",
-    "react-native-normalized/forbid-native-components": "error",
     "default-case": "error",
     quotes: [
       "error",
@@ -98,12 +87,6 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
-    "promise/no-return-wrap": "error",
-    "promise/param-names": "error",
-    "promise/catch-or-return": "error",
-    "promise/no-nesting": "error",
-    "promise/no-promise-in-callback": "error",
-    "promise/valid-params": "error",
     "@typescript-eslint/no-shadow": [
       "error",
       {
@@ -154,7 +137,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: "17.0.0",
+      version: "18.0.0",
     },
   },
   overrides: [
