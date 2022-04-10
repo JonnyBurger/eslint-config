@@ -5,10 +5,8 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  plugins: ["@typescript-eslint/eslint-plugin", "10x"],
+  plugins: ["react", "react-hooks", "@typescript-eslint/eslint-plugin", "10x"],
   extends: [
-    "react",
-    "react-hooks",
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
   ].filter(Boolean),
