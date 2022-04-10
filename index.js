@@ -407,12 +407,7 @@ module.exports = {
     "no-shadow": 0,
     "no-undef": 0,
     "require-await": 1,
-    "react/boolean-prop-naming": [
-      "error",
-      {
-        validateNested: true,
-      },
-    ],
+    "react/boolean-prop-naming": "off",
     "react/button-has-type": "error",
     "react/default-props-match-prop-types": "error",
     "react/function-component-definition": [
