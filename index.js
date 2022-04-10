@@ -464,13 +464,6 @@ module.exports = {
     ],
     "react/void-dom-elements-no-children": "error",
     "react/jsx-boolean-value": "error",
-    "react/jsx-closing-bracket-location": [
-      "error",
-      {
-        nonEmpty: "tag-aligned",
-        selfClosing: false,
-      },
-    ],
     "react/jsx-key": [
       "error",
       {
