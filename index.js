@@ -617,7 +617,7 @@ module.exports = {
   },
   settings: {
     react: {
-      version: "18.0.0",
+      version: "detect",
     },
   },
   overrides: [
