@@ -358,6 +358,7 @@ module.exports = {
     "react/no-direct-mutation-state": "error",
     "no-warning-comments": "warn",
     "no-unused-vars": "off",
+    "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
