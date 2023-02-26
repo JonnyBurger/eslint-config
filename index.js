@@ -621,7 +621,7 @@ module.exports = {
     "react/jsx-props-no-multi-spaces": "off",
     "react/jsx-tag-spacing": "off",
     "react/jsx-wrap-multilines": "off",
-    "validate-esm/require-extensions": "off",
+    "validate-esm/require-extensions": "error",
   },
   settings: {
     react: {
