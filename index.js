@@ -1,3 +1,6 @@
+const { dirname, resolve } = require("path");
+const { existsSync, lstatSync } = require("fs");
+
 module.exports = {
   env: {
     node: true,
@@ -615,6 +618,48 @@ module.exports = {
     "react/jsx-props-no-multi-spaces": "off",
     "react/jsx-tag-spacing": "off",
     "react/jsx-wrap-multilines": "off",
+    "correct-esm": {
+      meta: {
+        fixable: true,
+      },
+      create(context) {
+        function rule(node) {
+          const source = node.source;
+          if (!source) return;
+          const value = source.value;
+          if (!value || !value.startsWith(".") || value.endsWith(".js")) return;
+
+          const filePath = resolve(dirname(context.getFilename()), value);
+          if (!existsSync(filePath)) {
+            context.report({
+              node,
+              message: "Relative imports and exports must end with .js",
+              fix(fixer) {
+                return fixer.replaceText(source, `'${value}.js'`);
+              },
+            });
+            return;
+          }
+          if (lstatSync(filePath).isDirectory()) {
+            context.report({
+              node,
+              message: "Don't import a directory, add /index.js",
+              fix(fixer) {
+                return fixer.replaceText(source, `'${value}/index.js'`);
+              },
+            });
+          }
+        }
+
+        return {
+          DeclareExportDeclaration: rule,
+          DeclareExportAllDeclaration: rule,
+          ExportAllDeclaration: rule,
+          ExportNamedDeclaration: rule,
+          ImportDeclaration: rule,
+        };
+      },
+    },
   },
   settings: {
     react: {
