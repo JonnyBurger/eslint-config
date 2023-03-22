@@ -5,7 +5,13 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  plugins: ["react", "react-hooks", "@typescript-eslint/eslint-plugin", "10x"],
+  plugins: [
+    "react",
+    "react-hooks",
+    "@typescript-eslint/eslint-plugin",
+    "10x",
+    "validate-esm",
+  ],
   extends: [
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
@@ -359,6 +365,7 @@ module.exports = {
     "no-warning-comments": "warn",
     "no-unused-vars": "off",
     "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -604,10 +611,11 @@ module.exports = {
     "react/jsx-props-no-multi-spaces": "off",
     "react/jsx-tag-spacing": "off",
     "react/jsx-wrap-multilines": "off",
+    "validate-esm/require-extensions": "error",
   },
   settings: {
     react: {
-      version: "18.0.0",
+      version: "detect",
     },
   },
   overrides: [
