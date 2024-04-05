@@ -1,3 +1,3 @@
 import base from "./base";
 
-export default base(false);
+export default base(true);
