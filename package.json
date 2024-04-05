@@ -16,7 +16,9 @@
   ],
   "files": [
     "index.js",
-    "auto-import-rules.js"
+    "auto-import-rules.js",
+    "base.js",
+    "react.js"
   ],
   "author": "Jonny Burger <jonny.io>",
   "license": "ISC",
