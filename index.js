@@ -1,3 +1,3 @@
-import base from "./base";
+const base = require("./base");
 
-export default base(false);
+module.exports = base(false);

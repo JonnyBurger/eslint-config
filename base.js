@@ -1,4 +1,4 @@
-export default (react) => {
+module.exports = (react) => {
   return {
     env: {
       node: true,
